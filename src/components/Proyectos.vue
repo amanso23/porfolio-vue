@@ -1,7 +1,7 @@
 
 <template>
     <section class="m-7 md:m-6 lg:m-[5em] h-full">
-        <Title titulo="proyectos..."  />
+     
         <div class="flex flex-col justify-center items-center h-full gap-y-2 w-full">
             <Proyecto 
                 :nombre="'proyecto-final-vue'"
@@ -17,12 +17,12 @@
 
 <script>
     import Proyecto from './Proyecto.vue';
-    import Title from '@/components/Title.vue'
+   
     import proyectosSVG from '@/assets/proyectos.svg';
     export default {
         name: 'ProyectosComponent',
         components: {
-            Title,
+        
             Proyecto
         },
         data(){

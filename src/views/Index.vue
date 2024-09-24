@@ -1,14 +1,13 @@
 <template>
-    <div class="flex flex-col h-screen ">
-      <div class="flex flex-col-reverse lg:flex-row items-center justify-between h-full">
-        <main class="w-5/6 md:w-2/3 h-full ">
+    <div class="flex flex-col h-screen">
+      <Header />
+      <div class="flex flex-col lg:flex-row items-center justify-between h-full">
+        <Nav @seleccionarSeccion="seleccionarSeccion"/>
+        <main class="w-5/6 md:w-2/3 h-full  flex items-center justify-center">
           <Contenido :seccionSeleccionada="seccionSeleccionada" />
         </main>
-        <Nav @seleccionarSeccion="seleccionarSeccion"/>
-        
       </div>
       <Footer />
-      
     </div>
   </template>
   
@@ -16,13 +15,17 @@
   import Footer from '@/components/Footer.vue';
   import Contenido from '@/components/Contenido.vue';
   import Nav from '@/components/Nav.vue';
+  import Header from '@/components/Header.vue';
+
   
   export default{
     name: 'IndexView',
     components: {
       Footer,
       Contenido,
-      Nav
+      Nav,
+      Header
+
     },
     data() {
       return {
@@ -40,6 +43,7 @@
   </script>
   
   <style>
+
   :root {
     color-scheme: light dark;
   }
@@ -50,8 +54,8 @@
   }
 
   body {
-    background: radial-gradient(circle, rgb(18, 29, 32), rgb(0, 0, 0));
-    color: #ffffff;
+    background: radial-gradient(circle, #122828, rgb(0, 0, 0));
+    color: #a6adbb;
   }
   
   

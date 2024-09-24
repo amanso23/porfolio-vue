@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col self-start h-full">
+    <div class="flex flex-col items-center justify-center self-start h-full">
         <div v-if="seccionSeleccionada === 'Sobre mi'">
             <About />
         </div>

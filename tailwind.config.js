@@ -2,9 +2,15 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    darkMode: 'class', 
-    extend: {},
+    extend: {
+      colors: {
+        gradientColor1: '#ff4b63',
+        gradientColor2: '#6b33fe', 
+        gradientColor3: '#6b33fe', 
+        gradientColor4: '#23ce94', 
+      },
+    },
   },
-  plugins: [ require('tailwindcss'),require('autoprefixer')],
+  plugins: [ require('tailwindcss'),require('autoprefixer'), require("daisyui")],
 }
 

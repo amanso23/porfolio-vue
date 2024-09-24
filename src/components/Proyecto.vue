@@ -1,5 +1,5 @@
 <template>
-  <h1></h1>
+  <h1 class="custom-color font-bold text-2xl">sdsdsdsdsd</h1>
 </template>
 
 <script>
